@@ -52,7 +52,7 @@ end
 def turn
   puts "Please enter 1-9:"
   input = gets.strip
-  if valid_move?(input)
+  if valid_move?(input) == true
     move(input, current_player)
   else
     turn
