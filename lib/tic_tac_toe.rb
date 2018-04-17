@@ -41,7 +41,7 @@ else
 end
 
 def valid_move?(input)
-  index = input.to_i - 1
+  index = input_to_index(input)
   if position.between?(0,8) && !position_taken?(position)
     true
   else
