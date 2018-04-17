@@ -28,7 +28,8 @@ def display_board
 end
 
 def move(input, character = "X")
-  @board[input.to_i -1] = character
+  index = input_to_index(input)
+    @board[index]= character
 end
 
 def position_taken?(index)
