@@ -34,14 +34,14 @@ end
 
 def position_taken?(index)
   if @board[index] == "X" || @board[index] == "O"
-    true
-  else
-    false
+  return true
+else
+  return false
   end
 end
 
 def valid_move?(position)
-  position = position.to_i - 1
+  index = input.to_i - 1
   if position.between?(0,8) && !position_taken?(position)
     true
   else
