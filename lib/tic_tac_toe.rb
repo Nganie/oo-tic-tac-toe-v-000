@@ -27,9 +27,8 @@ def input_to_index(input)
    input = input.to_i - 1
 end
 
-def move(input, character = "X")
-  index = input_to_index(input)
-    @board[index]= character
+def move(input, character)
+    @board[index] = character
 end
 
 def position_taken?(index)
@@ -126,5 +125,4 @@ end
     puts "Cat's Game!"
  end
 end
-
 end
