@@ -113,7 +113,6 @@ end
    until over?
      turn
    end
-
    if won?
      puts "Congratulations #{winner}!"
    elsif draw?
