@@ -40,12 +40,7 @@ else
 end
 
 def valid_move?(input)
-  index = input_to_index(input)
-  if position.between?(0,8) && !position_taken?(position)
-    true
-  else
-    false
-  end
+  index.between?(0,8) && !position_taken?(index)
 end
 
 def turn
